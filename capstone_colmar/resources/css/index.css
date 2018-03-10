@@ -1,0 +1,627 @@
+/* UNIVERSAL CODE */
+
+html{
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.container{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+body{
+  color: #2f4f4f;
+  font-family: "roboto", sans-serif;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmYUtfBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* HEADER CODE */
+
+header{
+  height: 4rem;
+  padding: 0 1.5rem;
+}
+
+.hlogo{
+  display: flex;
+  align-items: center;
+  padding: 16px 0 16px 24px;
+  height: 32px;
+}
+
+.head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.color-dark{
+  color: #484848;
+  font-weight: 700;
+}
+
+.color-grey{
+  color: #a9a9a9;
+}
+
+nav{
+  padding-right: 24px;
+}
+
+.desktop{
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+nav ul li{
+  margin: 0 1rem;
+}
+
+.desktop a{
+  color: #606060;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 471px){
+  .mobile{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px){
+  .desktop{
+    display: none;
+  }
+
+  .mobile{
+    display: inline-flex;
+  }
+
+  .color-dark,
+  .color-grey{
+    display: none;
+  }
+}
+
+/* BANNER CODE */
+
+#banner{
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #d3d3d3;
+}
+
+#banner .container{
+  display: flex;
+  align-items: center;
+}
+
+.banner-img{
+  width: 60%;
+  height: auto;
+  padding: 2rem 1.5rem;
+}
+
+.banner-img img{
+  width: 100%;
+}
+
+.banner-info{
+  width: 40%;
+}
+
+.banner-text{
+  line-height: 1.5;
+  width: 75%;
+}
+
+.banner-text h1{
+  font-size: 2.4rem;
+  font-weight: 900;
+  line-height: 1.4;
+}
+
+.banner-text p{
+  font-size: 1.25rem;
+  padding: 1.5rem 0 1.5rem 0;
+  font-weight: 500;
+}
+
+.banner-button{
+  background-color: #484848;
+  padding: 0.5rem 0;
+  text-align: center;
+  width: 75%;
+  color: white;
+}
+
+@media only screen and (max-width: 470px){
+
+  #banner .container{
+    display: block;
+  }
+
+  .banner-img{
+    width: 100%;
+    padding: 0;
+  }
+
+  .banner-img img{
+    width: 100%;
+  }
+
+  .banner-info{
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .banner-text{
+    width: 90%;
+  }
+
+  .banner-text h1{
+    font-size: 1.85rem;
+  }
+
+  .banner-text p{
+    font-size: 1.125rem;
+    padding: 2rem 0 1.5rem 0;
+  }
+
+  .banner-button{
+    width: 90%;
+  }
+
+  .baneer-button p{
+    padding: 0.5rem 0;
+  }
+}
+
+/* MAIN-CONTENT CODE */
+
+#main-content{
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+#main-content .container{
+  display: inline-flex;
+  flex-direction: row;
+}
+
+/* LEFT MAIN-CONTENT CODE */
+
+.main-left{
+  margin: 2rem 1.5rem;
+  width: 60%;
+}
+
+.main-image img{
+  width: 100%;
+}
+
+.main-left h2{
+  font-size: 2rem;
+  font-weight: 900;
+  padding-top: 2rem;
+}
+
+.main-left p{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #606060;
+}
+
+.main-left span{
+  font-size: 0.75rem;
+  color: #606060;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 470px){
+  .main-left{
+    display: none;
+  }
+}
+
+/* RIGHT MAIN-CONTENT CODE */
+
+.main-right{
+  border-left: solid #d3d3d3 1px;
+  width: 40%;
+  padding-top: 1rem;
+}
+
+.link-container{
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  border-top: solid #d3d3d3 1px;
+  border-bottom: solid #d3d3d3 1px;
+  margin-bottom: 1px;
+  line-height: 1.5;
+}
+
+.link-image-container{
+  width: 40%;
+  padding: 1rem;
+}
+
+.link-image-container img{
+  width: 100%;
+}
+
+.link-information{
+  width: 65%;
+}
+
+.link-information h2{
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.link-information p{
+  padding: 0.5rem 0;
+  font-size: 0.85rem;
+}
+
+.link-information a{
+  font-size: 0.85rem;
+  text-decoration: none;
+  color:  #4d94ff;
+}
+
+.orientation{
+  border-top: none;
+}
+
+.guest-lecture{
+  background-color: #d3d3d3;
+}
+
+@media only screen and (min-width: 471px){
+  .link-mobile{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px){
+
+  .link-desktop{
+    display: none;
+  }
+
+  .main-right{
+    width: 100%;
+    padding: 1rem 1rem 2rem 1rem;
+    border: none;
+  }
+
+  .link-container{
+    border: none;
+    display: block;
+
+  }
+
+  .link-image-container{
+    width: 100%;
+    padding: 0;
+  }
+
+  .guest-lecture{
+    background-color: white;
+    border-bottom: solid 1px #d3d3d3;
+  }
+
+  .link-information{
+    width: 90%;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+}
+
+/* START-LEARNING CODE */
+
+#start-learning{
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #d3d3d3;
+}
+
+#start-learning .container{
+  padding-bottom: 2rem;
+}
+
+.learning-title{
+  font-weight: 900;
+  font-size: 2rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.programs{
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.program-container{
+  background-color: white;
+  max-width: 30%;
+  margin: 0 0.75rem 2rem 0.75rem;
+}
+
+.program-image-container img{
+  height: auto;
+  width: 100%;
+}
+
+.program-information{
+  margin: 0 2rem 2rem 2rem;
+}
+
+.program-information h3{
+  padding-top: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.course{
+  padding: 1rem 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #A0A0A0;
+  font-weight: 300;
+}
+
+.course-material{
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #A0A0A0;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 471px){
+  .mobile-container{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px){
+
+  #start-learning{
+    background-color: white;
+  }
+
+  .learning-title{
+    padding: 0 0 1rem 0;
+  }
+
+  .programs{
+    display: block;
+  }
+
+  .program-container{
+    display: none;
+  }
+
+  .mobile-container{
+    background-color: #d3d3d3;
+    width: 90%;
+    padding: 1rem 0 1.5rem 0;
+  }
+
+  .mobile-container{
+    margin: 0.5rem 1rem;
+  }
+
+  .mobile-software{
+    margin: 1rem 1rem 0.5rem 1rem;
+  }
+
+  .mobile-marketing{
+    margin: 0.5rem 1rem 0 1rem;
+  }
+
+  .mobile-container h3{
+    padding: 0 1rem 0 1rem;
+    font-weight: bold;
+    font-size: 1.125rem;
+  }
+}
+
+/* THESIS-EXHIBIT CODE */
+
+#thesis-exhibit{
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.thesis-title{
+  padding: 2rem 0;
+  text-align: center;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.exhibits{
+  display: inline-flex;
+}
+
+.thesis-video-info-container{
+  width: 60%;
+  padding: 0 1.5rem;
+}
+
+.thesis-info-container h3{
+  font-size: 1.25rem;
+}
+
+.thesis-video-container video{
+  width: 100%;
+}
+
+.thesis-info-container h3{
+  padding: 1.5rem 0 0.5rem;
+  font-weight: bold;
+}
+
+.thesis-info-container p{
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #909090;
+}
+
+.thesis-sides-container{
+  width: 40%;
+}
+
+.exhibit-container{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fisma{
+  background-color: #d3d3d3;
+}
+
+.exhibit-image{
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.exhibit-image img{
+  width: 100%;
+}
+
+.exhibit-info{
+  width: 65%;
+  line-height: 1.5;
+}
+
+.exhibit-info h3{
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.exhibit-info p{
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+  color: #909090;
+}
+
+@media only screen and (max-width: 470px){
+
+  .exhibit{
+    display: block;
+  }
+
+  .thesis-info-container{
+    display: none;
+  }
+
+  .thesis-sides-container{
+    display: none;
+  }
+
+  .thesis-video-info-container{
+    width: 100%;
+    padding: 0;
+  }
+
+  .thesis-video-container{
+    width: 100%;
+  }
+
+  .thesis-video-container video{
+    width: 100%;
+  }
+}
+
+/* FOOTER CODE */
+
+footer{
+  max-width: 1024px;
+  margin: 0 auto;
+  border-top: solid 1px #d3d3d3;
+  height: 5rem;
+}
+
+footer .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright{
+  padding: 1rem 0 0 1.5rem;
+}
+
+.copyright p{
+  font-size: 0.75rem;
+  color: #909090;
+}
+
+.flinks ul{
+  display: inline-flex;
+  padding: 1rem 1.5rem 0;
+}
+
+.flinks a{
+  text-decoration: none;
+  color: #909090;
+  padding-left: 1rem;
+  font-size: 0.75rem;
+}
+
+@media only screen and (max-width: 470px){
+  .flinks{
+    display: none;
+  }
+}
